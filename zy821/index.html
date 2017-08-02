@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="搜索"/>
+        <i class="fa fa-camera"></i>
+    </div>
+</header>
+<section class="content">
+    <div class="tab">
+        <ul>
+            <li><a href="#">推荐</a></li>
+            <li><a href="#">有声美文</a></li>
+            <li><a href="#">动听英文</a></li>
+            <li><a href="#">双语阅读</a></li>
+            <li><a href="#">英语听力</a></li>
+        </ul>
+    </div>
+    <div class="list">
+        <div class="left">
+            <h2>【每日一句】走，约饭去！</h2>
+            <span class="lf">英语功夫</span>
+            <span class="rt">34赞</span>
+        </div>
+        <div class="right">
+            <img src="images/youdao_08_03.png" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <div class="left">
+            <h2>【每日一句】走，约饭去！</h2>
+            <span class="lf one">圈子</span>
+            <span class="rt">34赞</span>
+        </div>
+        <div class="right">
+            <img src="images/youdao_08_06.png" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <div class="left">
+            <h2>【每日一句】走，约饭去！</h2>
+            <span class="lf one">圈子</span>
+            <span class="rt">34赞</span>
+        </div>
+        <div class="right">
+            <img src="images/youdao_08_08.png" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <div class="left">
+            <h2>【每日一句】走，约饭去！</h2>
+            <span class="lf one">圈子</span>
+            <span class="rt">34赞</span>
+        </div>
+        <div class="right">
+            <img src="images/youdao_08_10.png" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <div class="left">
+            <h2>【每日一句】走，约饭去！</h2>
+            <span class="lf one">圈子</span>
+            <span class="rt">34赞</span>
+        </div>
+        <div class="right">
+            <img src="images/youdao_08_08.png" alt=""/>
+        </div>
+    </div>
+    <div class="list">
+        <div class="left">
+            <h2>【每日一句】走，约饭去！</h2>
+            <span class="lf one">圈子</span>
+            <span class="rt">34赞</span>
+        </div>
+        <div class="right">
+            <img src="images/youdao_08_06.png" alt=""/>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <ul>
+        <li>
+            <a href="#">
+                <i class="fa fa-cc-diners-club"></i>
+                <span>词典</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-transgender-alt"></i>
+                <span>翻译</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i  class="fa fa-caret-square-o-right"></i>
+                <span>精品</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-foursquare"></i>
+                <span>发现</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-user-o"></i>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    $(".tab ul").on("click","li",function()
+    {
+        $(this).addClass("some").siblings().removeClass()
+    })
+    var main=new Swiper(".swiper-container");
+    function slideTo(index)
+    {
+        main.slideTo(index)
+    }
+    var d=new Date();
+    var year= d.getFullYear();
+    var month= d.getMonth()+1;
+    var day= d.getDate();
+    var hours= d.getHours();
+    var min= d.getMinutes();
+    var sec= d.getSeconds();
+    var tody=year+" "+month+" "+day+" "+hours+":"+min+":"+sec;
+    console.log(tody);
+    console.log(year);
+
+
+    //console.log(d)
+</script>
+</body>
+</html>
